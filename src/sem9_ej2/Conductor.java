@@ -64,9 +64,14 @@ public class Conductor {
     }
     
     public void verDatos(){
-        System.out.println("El conductor se llama: "+this.nombre+" "+this.apaterno+
+        System.out.println(this.nombre+" "+this.apaterno+
                 " "+this.amaterno+", y su tipo de documento es "+this.tipodoc+
                 " con numero "+this.ndoc);
     }
+
+//    @Override
+//    public String toString() {
+//        return this.nombre + this.apaterno+ this.amaterno; 
+//    }
     
 }

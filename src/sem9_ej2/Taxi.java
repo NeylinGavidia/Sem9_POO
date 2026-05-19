@@ -64,7 +64,10 @@ public class Taxi {
         this.chofer = c;
     }
     public void verChofer(){
-        System.out.println("Y el conductor es ");
+        System.out.print("Y el conductor es ");
          chofer.verDatos();
     }
+
+
+    
 }
