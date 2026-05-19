@@ -15,6 +15,14 @@ public class Taxi {
     private String modelo;
     private Conductor chofer;
 
+//    public Conductor getChofer() {
+//        return chofer;
+//    }
+//
+//    public void setChofer(Conductor chofer) {
+//        this.chofer = chofer;
+//    }
+
     public Taxi(String nplaca, String marca, String modelo, Conductor chofer) {
         this.nplaca = nplaca;
         this.marca = marca;
@@ -48,7 +56,8 @@ public class Taxi {
     
     public void verDatos(){
         System.out.println("El taxi tiene la placa " + this.nplaca + ", es de marca "+
-                this.marca + " y modelo "+this.modelo);
+                this.marca + " y modelo "+this.modelo);/*+"Y su chofer es: ");
+                 this.chofer.verDatos()*/
         
     }
     public void agregarChofer(Conductor c){
@@ -56,6 +65,6 @@ public class Taxi {
     }
     public void verChofer(){
         System.out.println("Y el conductor es ");
-                chofer.verDatos();
+         chofer.verDatos();
     }
 }
