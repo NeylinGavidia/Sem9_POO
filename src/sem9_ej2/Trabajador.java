@@ -72,10 +72,18 @@ public class Trabajador {
         this.nombre = nombre;
     }
     public void verDatos(){
-        System.out.println("El trabajador es: " + this.nombre+" "+this.apaterno+
+        System.out.println("El trabajador " + this.nombre+" "+this.apaterno+
                 " "+this.amaterno+", y su tipo de documento es "+this.tipodoc+
                 " con numero "+this.ndoc);
+        if (jefe !=null){
+         System.out.println("Y su jefe es");
+            this.jefe.verDatos();} //este solo con set
+         else{
+         System.out.println("No tiene jefe");
+          }
     }
+    
+    //otra forma para agregar jefe
     public void agregarJefe(Trabajador c){
         this.jefe = c;
     }
