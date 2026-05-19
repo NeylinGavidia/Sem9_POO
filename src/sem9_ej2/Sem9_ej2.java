@@ -31,6 +31,12 @@ public class Sem9_ej2 {
         t.verDatos();
         t.verChofer();//xd
         
+        //este es asociacion reflexiva
+        Trabajador tr = new Trabajador("Perez", "Marin", "CE", "123456789", "Renato");
+        Trabajador je = new Trabajador("Pilares", "Heredia", "DNI", "23456789", "Yulian");
+        tr.verDatos();
+        tr.agregarJefe(je);
+        tr.verJefe();
         
     }
     
